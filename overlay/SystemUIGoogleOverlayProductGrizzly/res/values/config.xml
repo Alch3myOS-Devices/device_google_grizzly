@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ambientcue_first_time_edu_text">Magic Cue uses AI to proactively suggest info and actions relevant to what you’re doing on screen</string>
+    <string-array name="config_controlsPreferredPackages">
+        <item>com.google.android.apps.chromecast.app</item>
+    </string-array>
+    <bool name="config_minmode_enabled">true</bool>
+    <string-array name="config_pluginAllowlist">
+        <item>com.android.systemui</item>
+        <item>com.android.systemui.plugin.globalactions.wallet</item>
+        <item>com.android.systemui.clocks</item>
+        <item>com.android.systemui.clocks.debug</item>
+        <item>com.android.systemui.clocks.bignum</item>
+        <item>com.android.systemui.clocks.calligraphy</item>
+        <item>com.android.systemui.clocks.flex</item>
+        <item>com.android.systemui.clocks.growth</item>
+        <item>com.android.systemui.clocks.handwritten</item>
+        <item>com.android.systemui.clocks.inflate</item>
+        <item>com.android.systemui.clocks.metro</item>
+        <item>com.android.systemui.clocks.numoverlap</item>
+        <item>com.android.systemui.clocks.weather</item>
+    </string-array>
+    <string name="config_preferredScreenshotEditor">com.google.android.apps.pixel.creativeassistant/com.google.android.apps.pixel.creativeassistant.ExternalEditActivity</string>
+    <string name="config_remoteCopyPackage">com.google.android.gms/.nearby.sharing.RemoteCopyShareSheetActivity</string>
+    <string name="config_screenshotEditor">com.google.android.markup/com.google.android.markup.AnnotateActivity</string>
+    <string name="config_screenshotFilesApp">com.google.android.apps.nbu.files/com.google.android.apps.nbu.files.home.HomeActivity</string>
+    <integer name="config_showTemperatureWarning">1</integer>
+    <integer name="config_showUsbPortAlarm">1</integer>
+    <bool name="config_vibrateOnIconAnimation">true</bool>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="display_white_balance_summary">Adapte dynamiquement l\'affichage à des tons plus chauds ou plus froids en fonction de l\'éclairage ambiant</string>
+    <string name="display_white_balance_title">Ton adaptatif</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + mot de passe</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + schéma</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + NIP</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Continuer sans Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_consent_introduction_title">Autoriser Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">\"Pixel Imprint utilise vos empreintes digitales pour activer et déverrouiller votre téléphone, autoriser des achats ou vous connecter à des applis.</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Configurer Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+</resources>

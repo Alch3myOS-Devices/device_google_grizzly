@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="display_white_balance_summary">Ekranın renk tonunu ortam ışığına göre sıcak veya soğuk olacak şekilde dinamik olarak uyarlar</string>
+    <string name="display_white_balance_title">Uyarlanabilir Ton</string>
+    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint + Şifre</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint + Desen</string>
+    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint + PIN</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Pixel Imprint olmadan devam et</string>
+    <string name="security_settings_fingerprint_enroll_consent_introduction_title">Pixel Imprint\'e izin verin</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">\"Pixel Imprint ile, satın alma işlemlerini yetkilendirmek veya uygulamalarda oturum açmak için parmak izinizi kullanabilirsiniz.</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Pixel Imprint\'i kurun</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
+</resources>

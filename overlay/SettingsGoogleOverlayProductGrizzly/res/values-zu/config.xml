@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="display_white_balance_summary">Ilungisa isibonisi ngokushintshashintshayo ukuze sibe namathoni afudumele noma apholile ngokusekelwe ekukhanyeni kwe-ambient</string>
+    <string name="display_white_balance_title">Ithoni eguquguqukayo</string>
+    <string name="fingerprint_unlock_set_unlock_password">I-Pixel Imprint + Iphasiwedi</string>
+    <string name="fingerprint_unlock_set_unlock_pattern">I-Pixel Imprint + Iphethini</string>
+    <string name="fingerprint_unlock_set_unlock_pin">I-Pixel Imprint + Iphinikhodi</string>
+    <string name="fingerprint_unlock_skip_fingerprint">Qhubeka ngaphandle kwe-Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_consent_introduction_title">Vumela i-Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">\"Nge-Pixel Imprint, ungasebenzisa izigxivizo zeminwe zakho ukuze ugunyaze ukuthenga noma ungene ngemvume kuzinhlelo zokusebenza.</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title">Setha i-Pixel Imprint</string>
+    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">I-Pixel Imprint</string>
+    <string name="security_settings_fingerprint_preference_title">I-Pixel Imprint</string>
+</resources>

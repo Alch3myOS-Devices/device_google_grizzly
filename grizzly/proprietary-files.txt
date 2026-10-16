@@ -1,0 +1,200 @@
+# System-side blobs from the same build as proprietary-files-vendor.txt.
+# First cut: system_ext libraries and binaries only. The remaining product apps
+# (Pixel camera, AICore and friends) are deliberately NOT here: they are optional
+# features. The euicc stack below is the exception, since without it there is no
+# way to manage a profile at all.
+system_ext/bin/backup_ota_log.sh
+system_ext/bin/bluetooth_gci
+system_ext/bin/gs_watchdogd
+system_ext/bin/hw/vendor.google.edgetpu_app_service@1.0-service
+system_ext/bin/hw/vendor.google.whitechapel.audio.hal.parserservice
+system_ext/bin/mosey_server
+system_ext/bin/sconed
+system_ext/etc/init/init.gs_watchdogd.rc
+system_ext/etc/init/bluetooth_gci.rc
+system_ext/etc/init/init.pms.rc
+system_ext/etc/init/vendor.google.edgetpu_app_service@1.0-service.rc
+system_ext/etc/init/vendor.google.whitechapel.audio.hal.parserservice.rc
+system_ext/etc/vintf/manifest/vendor.google.edgetpu_app_service@1.0-service.xml
+system_ext/lib64/com.google.edgetpu_app_service-V10-ndk.so
+system_ext/lib64/com.google.edgetpu_vendor_service-V2-ndk.so
+system_ext/lib64/libMIPC-native.so
+system_ext/lib64/libimsstack.so
+system_ext/lib64/libmipc.so
+system_ext/lib64/libmosey_daemon_ffi.so
+system_ext/lib64/libmtkproperty.so
+system_ext/lib64/libmtkrillog.so
+system_ext/lib64/libpixeldisplaymanager_jni.so
+system_ext/lib64/libpixelimsmedia.so
+system_ext/lib64/libpowerstatshaldataprovider.so
+system_ext/lib64/libtrm.so
+system_ext/lib64/vendor.google.whitechapel.audio.audioext@4.0.so
+system_ext/lib64/vendor.google.whitechapel.audio.extension-V8-ndk.so
+# odm partition (the dump normaliser splits this out of vendor)
+
+# Pixel feature declarations. Inert without GMS; with GApps installed they are what
+# lets Google's apps turn on the features this hardware actually has.
+product/etc/sysconfig/adaptivecharging.xml
+product/etc/sysconfig/ambient_data.xml
+product/etc/sysconfig/contextual_search.xml
+product/etc/sysconfig/dreamliner.xml
+product/etc/sysconfig/felica_feature.xml
+product/etc/sysconfig/game_service.xml
+product/etc/sysconfig/gemini_experience.xml
+product/etc/sysconfig/gemini_intelligence_device.xml
+product/etc/sysconfig/google_build.xml
+product/etc/sysconfig/google_fi.xml
+product/etc/sysconfig/google_xr_projected.xml
+product/etc/sysconfig/nexus.xml
+product/etc/sysconfig/nga.xml
+product/etc/sysconfig/nowplaying_app_26q1.xml
+product/etc/sysconfig/pixel_experience_2017.xml
+product/etc/sysconfig/pixel_experience_2018.xml
+product/etc/sysconfig/pixel_experience_2019.xml
+product/etc/sysconfig/pixel_experience_2019_midyear.xml
+product/etc/sysconfig/pixel_experience_2020.xml
+product/etc/sysconfig/pixel_experience_2020_midyear.xml
+product/etc/sysconfig/pixel_experience_2021.xml
+product/etc/sysconfig/pixel_experience_2021_midyear.xml
+product/etc/sysconfig/pixel_experience_2022.xml
+product/etc/sysconfig/pixel_experience_2022_midyear.xml
+product/etc/sysconfig/pixel_experience_2023.xml
+product/etc/sysconfig/pixel_experience_2023_midyear.xml
+product/etc/sysconfig/pixel_experience_2024.xml
+product/etc/sysconfig/pixel_experience_2024_midyear.xml
+product/etc/sysconfig/pixel_experience_2025.xml
+product/etc/sysconfig/pixel_experience_2025_midyear.xml
+product/etc/sysconfig/pixel_experience_2026.xml
+product/etc/sysconfig/quick_tap.xml
+product/etc/sysconfig/satellite_sos.xml
+product/etc/default-permissions/default-permissions-stargate.xml
+product/etc/permissions/android.hardware.telephony.satellite.xml
+product/etc/permissions/com.google.android.apps.stargate.support.xml
+product/etc/permissions/com.google.android.apps.stargate.xml
+product/etc/permissions/features-verizon.xml
+
+# Pixel libraries and the jars behind them. The declarations alone would fail at
+# load; together they are what Google Camera and Dialer look for once GApps is in.
+product/etc/permissions/androidx.camera.extensions.impl.xml
+product/etc/permissions/com.google.android.dialer.support.xml
+product/etc/permissions/com.google.pixel.camera.connectivity.impl.xml
+product/etc/permissions/com.google.pixel.camera.services.cameraidremapper.impl.xml
+product/etc/permissions/com.google.pixel.camera.services.lyricconfigprovider.impl.xml
+product/etc/permissions/com.verizon.apn.xml
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
+system_ext/etc/permissions/com.android.omadm.radioconfig.xml
+system_ext/etc/permissions/com.google.android.camera.extensions.xml
+system_ext/etc/permissions/com.google.android.camerax.extensions.xml
+system_ext/etc/permissions/com.google.android.modem.pms.lib.xml
+system_ext/etc/permissions/com.google.input.gia.giaservicemanager.xml
+system_ext/etc/permissions/com.google.pixel.camera.connectivity.xml
+system_ext/etc/permissions/com.google.pixel.camera.services.cameraidremapper.xml
+system_ext/etc/permissions/com.google.pixel.camera.services.lyricconfigprovider.xml
+system_ext/etc/permissions/google-ril.xml
+system_ext/etc/permissions/org.carconnectivity.android.digitalkey.timesync.xml
+product/app/VZWAPNLib/VZWAPNLib.apk
+product/framework/com.google.android.dialer.support.jar
+system_ext/framework/RadioConfigLib.jar
+system_ext/framework/com.android.hotwordenrollment.common.util.jar
+system_ext/framework/com.google.android.camera.extensions.jar
+system_ext/framework/com.google.android.camerax.extensions.jar
+system_ext/framework/com.google.android.modem.pms.lib.jar
+system_ext/framework/com.google.input.gia.giaservicemanager.jar
+system_ext/framework/com.google.pixel.camera.connectivity.jar
+system_ext/framework/com.google.pixel.camera.services.cameraidremapper.jar
+system_ext/framework/com.google.pixel.camera.services.lyricconfigprovider.jar
+system_ext/framework/google-ril.jar
+system_ext/framework/org.carconnectivity.android.digitalkey.timesync.jar
+
+# IMS, which is what makes voice calls work. Nothing here implemented
+# android.telephony.ims.ImsService, so the framework never registered IMS: on a VoLTE
+# network that leaves SMS and data working and voice calls failing to connect, because
+# SMS rides the CS domain and needs no IMS. ImsStack and Iwlan are built from source
+# (packages/modules/ImsStack, packages/services/Iwlan) and bring their own permissions
+# and sysconfig with them, so they are named in PRODUCT_PACKAGES rather than listed
+# here. These two have no source in the tree. qns is what
+# config_qualified_networks_service_package already points at.
+#
+# Both are platform-signed, so they re-sign with our key rather than needing PRESIGNED.
+# The permissions file is load-bearing: a priv-app holding a signature|privileged
+# permission that nothing allowlists throws out of system_server at boot.
+system_ext/etc/permissions/com.android.qns.xml
+system_ext/etc/sysconfig/preinstalled-packages-pixelimsmedia.xml
+system_ext/priv-app/PixelImsMediaService/PixelImsMediaService.apk
+system_ext/priv-app/PixelQualifiedNetworksService/PixelQualifiedNetworksService.apk
+
+# The rest of the telephony stack. None of these have source in the tree. PixelModemService
+# is the same shape as ImsStack was: its shared library and the jar behind it were already
+# here, the app that uses them was not. grilservice and ril-extension are the Google RIL
+# extensions the modem talks through, and the two satellite services are what the satellite
+# HAL and config expect. All are platform-signed, so they re-sign with our key.
+system_ext/etc/permissions/com.google.android.modem.pms.xml
+system_ext/etc/permissions/com.google.android.rilextension.xml
+system_ext/etc/permissions/privapp-permissions-google-se.xml
+system_ext/etc/permissions/privapp-permlist_com.google.android.grilservice.xml
+system_ext/etc/sysconfig/preinstalled-packages-gril.xml
+system_ext/etc/sysconfig/preinstalled-packages-pixel-modem-service.xml
+system_ext/etc/sysconfig/preinstalled-packages-ril.xml
+product/priv-app/SatelliteGateway-Phone-v96792000/SatelliteGateway-Phone-v96792000.apk:product/priv-app/SatelliteGateway-Phone/SatelliteGateway-Phone.apk;PRESIGNED
+product/priv-app/SCONE-v77459/SCONE-v77459.apk;PRESIGNED
+system_ext/priv-app/CarrierSetup/CarrierSetup.apk
+system_ext/priv-app/PixelModemService/PixelModemService.apk
+system_ext/priv-app/PixelSatelliteService/PixelSatelliteService.apk
+system_ext/priv-app/VendorImplSatelliteService/VendorImplSatelliteService.apk
+system_ext/priv-app/grilservice/grilservice.apk
+system_ext/priv-app/ril-extension/ril-extension.apk
+
+# Assisted GNSS. LPPeService is the system side of MediaTek's AGPS daemon, reached through
+# mtk_framework2agps and mtk_agps2framework: it brings up the data connection for SUPL,
+# answers the daemon's network requests and passes it the network location. Without it
+# the GNSS stack never asks for assistance at all. It joins the system uid and runs inside
+# system_server, so it re-signs with our platform key and needs no policy of its own;
+# system_server already has stock's rules for the LBS daemons.
+system_ext/etc/permissions/privapp-permlist_com.google.location.lppe.main.xml
+system_ext/priv-app/LPPeService/LPPeService.apk
+
+# The fingerprint overlays. grizzly reads fingerprints from the screen, and these are
+# what tell Settings so: the per-stage guidance strings, the lottie animations showing
+# which way to move, and the message timing that stops it repeating one line. The HAL
+# enrolls fine without them (samples count down normally), the enrollment just gives no
+# useful direction. Moved to product/app because extract_utils has package rules for app
+# and priv-app only; they are static rros, so they apply from anywhere on a system partition.
+product/overlay/UdfpsOverlay.apk:product/app/UdfpsOverlay/UdfpsOverlay.apk
+product/overlay/UltrasonicOverlay.apk:product/app/UltrasonicOverlay/UltrasonicOverlay.apk
+
+# Carrier config. The framework loads it from the package named by
+# platform_carrier_config_package, which is com.google.android.carrier, and with that
+# package absent nothing is applied at all: carrier_config_applied_bool stays false and
+# every value falls back to its AOSP default. carrier_volte_available_bool defaults to
+# false, so the framework will not attempt IMS voice registration and calls do not
+# connect even with a working ImsService and a network advertising VoPS. PRESIGNED
+# because it is signed with Google's key and carrier privilege rules are certificate
+# based, so re-signing would change what the SIM grants it.
+product/etc/sysconfig/preinstalled-packages-pixel-carrier.xml
+product/priv-app/CarrierSettings/CarrierSettings.apk;PRESIGNED
+
+# Wi-Fi calling setup. A carrier config that wants an emergency address before Wi-Fi
+# calling turns on (TELUS's does) names WfcActivationActivity, and Settings has no
+# fallback: without this package, turning Wi-Fi calling on crashes Settings. PRESIGNED,
+# as stock ships it. It reads Google Services Framework when it starts, so without GApps
+# it may not run either. Its allowlist, hidden API exemption and default grants are in
+# the device tree; nexus.xml and the user-type list above already name it.
+product/priv-app/WfcActivation/WfcActivation.apk;PRESIGNED
+
+# eSIM. Two separate things. EuiccSupportPixel is the low-level half: eUICC firmware
+# and applet updates, its own privapp allowlist, and a malibu overlay. It runs with or
+# without GMS. EuiccGoogle is the LPA, and it only works with GMS, which is what
+# EuiccPolicy gates it on. The malibu overlay moves to product/app because extract_utils
+# only has package rules for app and priv-app, and an apk cannot go through
+# PRODUCT_COPY_FILES. It is a static rro, so it applies from anywhere on a system
+# partition, and stock already ships the other euicc overlay out of priv-app.
+product/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
+product/overlay/EuiccSupportPixelOverlay/EuiccSupportPixelOverlay.apk:product/app/EuiccSupportPixelOverlay/EuiccSupportPixelOverlay.apk
+system_ext/etc/default-permissions/default-permissions-euiccpixel.xml
+system_ext/etc/permissions/com.google.euiccpixel.permissions.xml
+system_ext/etc/permissions/com.google.euiccpixel.xml
+system_ext/priv-app/EuiccGoogleOverlay/EuiccGoogleOverlay.apk
+system_ext/priv-app/EuiccSupportPixel-P23/DKA_0303_03x_25.up
+system_ext/priv-app/EuiccSupportPixel-P23/EuiccSupportPixel-P23.apk;PRESIGNED
+system_ext/priv-app/EuiccSupportPixel-P23/esim-full-v1.img
+system_ext/priv-app/EuiccSupportPixelPermissions/EuiccSupportPixelPermissions.apk;PRESIGNED
