@@ -26,9 +26,13 @@ PRODUCT_PACKAGES += \
     LineageSdkOverlayGrizzly \
     SettingsOverlayLineageGrizzly
 
-# config_face_enroll points Settings here; the HAL draws the preview itself.
+# Alch3myOS About phone
 PRODUCT_PACKAGES += \
-    FaceEnroll
+    Alch3mySettingsGrizzly
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.alch3my.maintainer=Pyrtle93 \
+    ro.alch3my.maintainer.url=https://t.me/PyrtlesPixels
 
 # The three vendor.*.modules/devices.ready properties gate the init blocks incl. the
 # vibrator HAL; without them system_server waits on IVibratorManager forever.

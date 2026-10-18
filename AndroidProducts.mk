@@ -5,4 +5,4 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_grizzly.mk \
-    $(LOCAL_DIR)/lineage_grizzly.mk
+    $(LOCAL_DIR)/alch3my_grizzly.mk

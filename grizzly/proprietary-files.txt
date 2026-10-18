@@ -3,6 +3,10 @@
 # (Pixel camera, AICore and friends) are deliberately NOT here: they are optional
 # features. The euicc stack below is the exception, since without it there is no
 # way to manage a profile at all.
+
+# vendor/gms ships libpowerstatshaldataprovider (TurboAdapter) and the dialer
+# support jar with its permission file; defining them here as well would put
+# two modules on the same install paths.
 system_ext/bin/backup_ota_log.sh
 system_ext/bin/bluetooth_gci
 system_ext/bin/gs_watchdogd
@@ -26,7 +30,6 @@ system_ext/lib64/libmtkproperty.so
 system_ext/lib64/libmtkrillog.so
 system_ext/lib64/libpixeldisplaymanager_jni.so
 system_ext/lib64/libpixelimsmedia.so
-system_ext/lib64/libpowerstatshaldataprovider.so
 system_ext/lib64/libtrm.so
 system_ext/lib64/vendor.google.whitechapel.audio.audioext@4.0.so
 system_ext/lib64/vendor.google.whitechapel.audio.extension-V8-ndk.so
@@ -76,7 +79,6 @@ product/etc/permissions/features-verizon.xml
 # Pixel libraries and the jars behind them. The declarations alone would fail at
 # load; together they are what Google Camera and Dialer look for once GApps is in.
 product/etc/permissions/androidx.camera.extensions.impl.xml
-product/etc/permissions/com.google.android.dialer.support.xml
 product/etc/permissions/com.google.pixel.camera.connectivity.impl.xml
 product/etc/permissions/com.google.pixel.camera.services.cameraidremapper.impl.xml
 product/etc/permissions/com.google.pixel.camera.services.lyricconfigprovider.impl.xml
@@ -93,7 +95,6 @@ system_ext/etc/permissions/com.google.pixel.camera.services.lyricconfigprovider.
 system_ext/etc/permissions/google-ril.xml
 system_ext/etc/permissions/org.carconnectivity.android.digitalkey.timesync.xml
 product/app/VZWAPNLib/VZWAPNLib.apk
-product/framework/com.google.android.dialer.support.jar
 system_ext/framework/RadioConfigLib.jar
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 system_ext/framework/com.google.android.camera.extensions.jar

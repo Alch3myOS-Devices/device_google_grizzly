@@ -1,0 +1,2 @@
+allow priv_app_all hal_audio_ext_service:service_manager find;
+allow priv_app_all hal_audio_default:binder call;
