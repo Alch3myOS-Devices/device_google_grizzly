@@ -11,4 +11,26 @@
 
     <!-- Deliberately overrides the stock-ported true in FrameworkResOverlayVendorYogi. -->
     <bool name="config_isDesktopModeSupported">false</bool>
+
+    <!-- The 8-hourly fetch has no per-device source, so the URL is left empty
+         and the fetch fails; the certified props array below always serves.
+         Fields that change with every OTA come from the build props, which
+         carry the real stock identity. -->
+    <string name="config_pifUpdateUrl" translatable="false"></string>
+
+    <!-- The device's own stable identity, in place of DerpFest's Pixel 10 Pro XL
+         default, which made Play deliver mustang device packs that crash Google
+         Camera at startup. The spoof therefore reports this build as itself. -->
+    <string-array name="config_certifiedBuildProperties">
+        <item>MANUFACTURER:Google</item>
+        <item>MODEL:Pixel 11 Pro</item>
+        <item>BRAND:google</item>
+        <item>PRODUCT:grizzly</item>
+        <item>DEVICE:grizzly</item>
+        <item>HARDWARE:grizzly</item>
+        <item>VERSION.RELEASE:17</item>
+        <item>TYPE:user</item>
+        <item>TAGS:release-keys</item>
+        <item>VERSION.DEVICE_INITIAL_SDK_INT:37</item>
+    </string-array>
 </resources>
