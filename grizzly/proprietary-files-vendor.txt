@@ -567,7 +567,6 @@ vendor/etc/powerhint.json
 vendor/etc/powervr.ini
 vendor/etc/public.libraries.txt
 vendor/etc/res/images/charger/battery_overheat.png
-vendor/etc/res/images/charger/main_font.png
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/registry/grizzly_common.reg
 vendor/etc/sensors/registry/grizzly_dvt.reg
