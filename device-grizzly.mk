@@ -43,6 +43,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/google/grizzly/init.insmod.grizzly.cfg:$(TARGET_COPY_OUT_VENDOR_DLKM)/etc/init.insmod.grizzly.cfg
 
+# Starts stock's NFC HAL; the blob list skips stock's own init script for it.
+PRODUCT_COPY_FILES += \
+    device/google/grizzly/nfc/nfc2-service-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nfc2-service-default.rc
+
 # The qfp extension interface only the fingerprint daemon registers.
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(DEVICE_PATH)/vintf/qfp_framework_matrix_system_ext.xml
