@@ -1,0 +1,7 @@
+# The NFC HAL is stock's prebuilt (proprietary-files-vendor.txt), but its init script
+# is skipped at extraction, so it is installed from here. Without it nothing starts
+# the HAL: com.android.nfc waits for it, stops responding and is restarted forever.
+service nfc_hal_service /vendor/bin/hw/android.hardware.nfc2-service.st
+    class hal
+    user nfc
+    group nfc
