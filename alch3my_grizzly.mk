@@ -27,8 +27,8 @@ PRODUCT_SYSTEM_BRAND := google
 PRODUCT_SYSTEM_MANUFACTURER := Google
 PRODUCT_SYSTEM_NAME := generic_system_google
 
-TARGET_SCREEN_HEIGHT := 2410
-TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 2856
+TARGET_SCREEN_WIDTH := 1280
 
 # Report the stock build these blobs come from; update it with the blobs.
 PRODUCT_BUILD_PROP_OVERRIDES += \
