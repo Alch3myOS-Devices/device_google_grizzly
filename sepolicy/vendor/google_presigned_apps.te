@@ -1,0 +1,9 @@
+# Google's presigned Pixel apps. On stock they carry the platform signature and run as
+# platform_app, which is what device_allow.te and device_residual.te were taken from;
+# here they keep Google's signature and run as priv_app, so they need the same access.
+# Hand written: the generated files are rebuilt from stock and would drop these.
+
+# DeviceConnectivityService reads and sets Clear Calling through the audio HAL's
+# IAudioExtension service. Without this the switch turns itself back off.
+allow priv_app_all hal_audio_ext_service:service_manager find;
+allow priv_app_all hal_audio_default:binder call;
