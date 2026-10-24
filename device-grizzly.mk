@@ -34,10 +34,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.alch3my.maintainer=Pyrtle93 \
     ro.alch3my.maintainer.url=https://t.me/PyrtlesPixels
 
-# config_face_enroll points Settings here; the HAL draws the preview itself.
-PRODUCT_PACKAGES += \
-    FaceEnroll
-
 # The three vendor.*.modules/devices.ready properties gate the init blocks incl. the
 # vibrator HAL; without them system_server waits on IVibratorManager forever.
 PRODUCT_COPY_FILES += \

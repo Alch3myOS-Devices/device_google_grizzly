@@ -3,6 +3,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Google face unlock (vendor/google/faceunlock). vendor/alch3my/config/alch3my.mk reads
+# these while common_full_phone.mk is inherited, so they have to come first.
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_GFU := true
+
 # Inherit some Alch3myOS stuff
 $(call inherit-product, vendor/alch3my/config/common_full_phone.mk)
 
@@ -13,9 +18,6 @@ IS_PIXEL := true
 TARGET_HAS_UDFPS := true
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_DOES_NOT_SUPPORT_GOOGLE_BATTERY := false
-# Face unlock is the stock face HAL with FaceEnroll (device/google/malibu);
-# Alch3myOS's own face unlock would add a second one.
-TARGET_FACE_UNLOCK_SUPPORTED := false
 
 DEVICE_CODENAME := grizzly
 DEVICE_PATH := device/google/grizzly
