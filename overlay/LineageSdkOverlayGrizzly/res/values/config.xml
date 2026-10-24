@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Ours, not recovered from stock. The wireless charger HAL and the whole wlcin power
      supply stack are present, so the setting belongs in the UI. LongScreen is opt-in per
-     app and only matters on the cover panel, which is 1080x2342; the inner one is nearly
-     square at 2152x2076 and no app would want stretching there. -->
+     app, for apps that would otherwise letterbox on the tall 1280x2856 panel. -->
 <resources>
     <string-array name="config_restartActionsList">
         <item>restart</item>
