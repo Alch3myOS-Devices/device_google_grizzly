@@ -924,6 +924,7 @@ allow grilservice_app hal_bluetooth_btlinux:fd { use };
 allow grilservice_app hal_bluetooth_coexistence_service:service_manager { find };
 allow grilservice_app hal_power_stats:memfd_file { getattr map read write };
 allow grilservice_app hal_vendor_radio_external_service:service_manager { find };
+allow grilservice_app hal_radio_ext_service:service_manager { find };
 allow grilservice_app hal_wifi_ext:binder { call transfer };
 allow grilservice_app hal_wifi_ext:fd { use };
 allow grilservice_app hal_wifi_ext_hwservice:hwservice_manager { find };
