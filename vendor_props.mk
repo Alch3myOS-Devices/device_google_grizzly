@@ -290,3 +290,10 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.pktrouter=1 \
     vendor.zram.size=50p \
     zygote.critical_window.minute=10
+
+# Disable Bluetooth Quality Report
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.bluetooth.bqr.event_mask=0 \
+    persist.bluetooth.bqr.min_interval_ms=0 \
+    persist.bluetooth.bqr.vnd_quality_mask=0 \
+    persist.bluetooth.bqr.vnd_trace_mask=0
