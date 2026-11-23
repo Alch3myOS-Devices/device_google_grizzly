@@ -1127,6 +1127,8 @@ allow hal_bluetooth_btlinux servicemanager:binder { call transfer };
 allow hal_bluetooth_btlinux servicemanager:fd { use };
 allow hal_bluetooth_btlinux sscoredump_vendor_data_crashinfo_file:dir { add_name create getattr ioctl lock open read remove_name rename reparent rmdir search setattr watch watch_reads write };
 allow hal_bluetooth_btlinux sscoredump_vendor_data_crashinfo_file:file { append create getattr ioctl lock map open read rename setattr unlink watch watch_reads write };
+allow hal_bluetooth_btlinux sscoredump_vendor_data_coredump_file:dir { add_name getattr ioctl lock open read remove_name search watch watch_reads write };
+allow hal_bluetooth_btlinux sscoredump_vendor_data_coredump_file:file { append create getattr ioctl lock map open read rename setattr unlink watch watch_reads write };
 allow hal_bluetooth_btlinux sysfs_bluetooth_writable:file { append getattr ioctl lock map open read watch watch_reads write };
 allow hal_bluetooth_btlinux vendor_aoc_prop:file { getattr map open read };
 allow hal_bluetooth_btlinux vendor_bt_data_file:dir { add_name getattr ioctl lock open read remove_name search watch watch_reads write };
@@ -3610,6 +3612,8 @@ allow sscoredump sscoredump_device:chr_file { append getattr ioctl lock map open
 allow sscoredump sscoredump_exec:file { entrypoint execute getattr map open read };
 allow sscoredump sscoredump_vendor_data_crashinfo_file:dir { add_name create getattr ioctl lock open read remove_name rename reparent rmdir search setattr watch watch_reads write };
 allow sscoredump sscoredump_vendor_data_crashinfo_file:file { append create getattr ioctl lock map open read rename setattr unlink watch watch_reads write };
+allow sscoredump sscoredump_vendor_data_coredump_file:dir { add_name getattr ioctl lock open read remove_name search watch watch_reads write };
+allow sscoredump sscoredump_vendor_data_coredump_file:file { append create getattr ioctl lock map open read rename setattr unlink watch watch_reads write };
 allow sscoredump sysfs_sscoredump_subsystem_report_count:file { getattr ioctl lock map open read watch watch_reads };
 allow sscoredump vendor_ssrdump_prop:file { getattr map open read };
 allow sscoredump vendor_ssrdump_prop:property_service { set };
