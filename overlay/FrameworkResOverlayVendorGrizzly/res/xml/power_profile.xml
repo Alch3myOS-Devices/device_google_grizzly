@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     grizzly power profile. CPU policies, frequency steps and battery capacity were read
+     from the phone (kit287 MAKE-POWER-PROFILE.sh); the milliamp values are estimates.
+     On Pixel the measured rail energy (ODPM) sets the totals; these values mostly split
+     that energy between apps.
+-->
+<device name="Android">
+  <item name="battery.capacity">4850</item>
+  <item name="cpu.suspend">1.0</item>
+  <item name="cpu.idle">4.0</item>
+  <item name="cpu.active">10.0</item>
+  <!-- policy0: little cluster -->
+  <item name="cpu.scaling_policy_power.policy0">1.5</item>
+  <array name="cpu.scaling_step_power.policy0">
+    <value>5.2</value> <!-- 394000 kHz -->
+    <value>7.0</value> <!-- 533000 kHz -->
+    <value>8.3</value> <!-- 614000 kHz -->
+    <value>9.7</value> <!-- 691000 kHz -->
+    <value>11.7</value> <!-- 787000 kHz -->
+    <value>13.9</value> <!-- 883000 kHz -->
+    <value>15.9</value> <!-- 960000 kHz -->
+    <value>18.0</value> <!-- 1036000 kHz -->
+    <value>21.6</value> <!-- 1152000 kHz -->
+    <value>24.8</value> <!-- 1248000 kHz -->
+    <value>28.3</value> <!-- 1344000 kHz -->
+    <value>32.0</value> <!-- 1440000 kHz -->
+    <value>36.0</value> <!-- 1536000 kHz -->
+    <value>40.3</value> <!-- 1632000 kHz -->
+    <value>44.8</value> <!-- 1728000 kHz -->
+    <value>49.6</value> <!-- 1824000 kHz -->
+    <value>54.6</value> <!-- 1920000 kHz -->
+    <value>63.2</value> <!-- 2073000 kHz -->
+    <value>67.7</value> <!-- 2150000 kHz -->
+    <value>72.4</value> <!-- 2227000 kHz -->
+    <value>79.8</value> <!-- 2342000 kHz -->
+    <value>90.2</value> <!-- 2496000 kHz -->
+    <value>101.2</value> <!-- 2649000 kHz -->
+  </array>
+  <!-- policy2: mid cluster -->
+  <item name="cpu.scaling_policy_power.policy2">5.0</item>
+  <array name="cpu.scaling_step_power.policy2">
+    <value>13.4</value> <!-- 394000 kHz -->
+    <value>17.9</value> <!-- 533000 kHz -->
+    <value>21.2</value> <!-- 614000 kHz -->
+    <value>24.7</value> <!-- 691000 kHz -->
+    <value>28.6</value> <!-- 768000 kHz -->
+    <value>32.9</value> <!-- 844000 kHz -->
+    <value>37.7</value> <!-- 921000 kHz -->
+    <value>45.6</value> <!-- 1036000 kHz -->
+    <value>56.0</value> <!-- 1171000 kHz -->
+    <value>67.6</value> <!-- 1305000 kHz -->
+    <value>80.6</value> <!-- 1440000 kHz -->
+    <value>94.7</value> <!-- 1574000 kHz -->
+    <value>107.8</value> <!-- 1689000 kHz -->
+    <value>121.9</value> <!-- 1804000 kHz -->
+    <value>137.0</value> <!-- 1920000 kHz -->
+    <value>152.9</value> <!-- 2035000 kHz -->
+    <value>172.7</value> <!-- 2169000 kHz -->
+    <value>193.8</value> <!-- 2304000 kHz -->
+    <value>222.6</value> <!-- 2476000 kHz -->
+    <value>253.6</value> <!-- 2649000 kHz -->
+    <value>302.1</value> <!-- 2899000 kHz -->
+    <value>354.8</value> <!-- 3148000 kHz -->
+    <value>407.6</value> <!-- 3379000 kHz -->
+  </array>
+  <!-- policy6: big cluster -->
+  <item name="cpu.scaling_policy_power.policy6">10.0</item>
+  <array name="cpu.scaling_step_power.policy6">
+    <value>49.2</value> <!-- 788000 kHz -->
+    <value>61.7</value> <!-- 921000 kHz -->
+    <value>76.3</value> <!-- 1056000 kHz -->
+    <value>92.9</value> <!-- 1190000 kHz -->
+    <value>108.7</value> <!-- 1305000 kHz -->
+    <value>125.9</value> <!-- 1420000 kHz -->
+    <value>148.0</value> <!-- 1555000 kHz -->
+    <value>171.9</value> <!-- 1689000 kHz -->
+    <value>201.8</value> <!-- 1843000 kHz -->
+    <value>234.1</value> <!-- 1996000 kHz -->
+    <value>269.2</value> <!-- 2150000 kHz -->
+    <value>311.8</value> <!-- 2323000 kHz -->
+    <value>357.7</value> <!-- 2496000 kHz -->
+    <value>400.9</value> <!-- 2649000 kHz -->
+    <value>447.1</value> <!-- 2803000 kHz -->
+    <value>520.9</value> <!-- 3033000 kHz -->
+    <value>628.6</value> <!-- 3340000 kHz -->
+    <value>716.4</value> <!-- 3571000 kHz -->
+    <value>801.7</value> <!-- 3782000 kHz -->
+    <value>850.7</value> <!-- 3898000 kHz -->
+    <value>900.7</value> <!-- 4013000 kHz -->
+    <value>943.6</value> <!-- 4109000 kHz -->
+  </array>
+  <item name="screen.on.display0">70</item>
+  <item name="screen.full.display0">550</item>
+  <item name="ambient.on.display0">18</item>
+  <item name="wifi.controller.idle">1</item>
+  <item name="wifi.controller.rx">80</item>
+  <item name="wifi.controller.tx">150</item>
+  <array name="wifi.controller.tx_levels"><value>150</value></array>
+  <item name="wifi.controller.voltage">3700</item>
+  <item name="bluetooth.controller.idle">0.5</item>
+  <item name="bluetooth.controller.rx">8</item>
+  <item name="bluetooth.controller.tx">12</item>
+  <item name="bluetooth.controller.voltage">3700</item>
+  <item name="modem.controller.sleep">1</item>
+  <item name="modem.controller.idle">5</item>
+  <item name="modem.controller.rx">150</item>
+  <array name="modem.controller.tx">
+    <value>150</value> <value>180</value> <value>220</value> <value>300</value> <value>400</value>
+  </array>
+  <item name="modem.controller.voltage">3700</item>
+  <item name="radio.active">200</item>
+  <item name="radio.scanning">10</item>
+  <array name="radio.on">
+    <value>4</value> <value>3</value> <value>2</value> <value>1.5</value> <value>1</value>
+  </array>
+  <item name="gps.on">25</item>
+  <item name="gps.voltage">3700</item>
+  <item name="camera.avg">600</item>
+  <item name="camera.flashlight">160</item>
+  <item name="audio">20</item>
+  <item name="video">50</item>
+</device>
