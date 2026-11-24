@@ -80,7 +80,7 @@ type edgetpu_device, dev_type;
 type edgetpu_logging_exec, exec_type, file_type, vendor_file_type;
 type edgetpu_nnapi_service, service_manager_type;
 type edgetpu_tachyon_server_exec, exec_type, file_type, vendor_file_type;
-type edgetpu_tachyon_service, service_manager_type;
+type edgetpu_tachyon_service, pcc_vendor_service, service_manager_type;
 type edgetpu_vendor_server_exec, exec_type, file_type, vendor_file_type;
 type edgetpu_vendor_service, hal_service_type, service_manager_type;
 type edgetpu_vendor_service_data_file, data_file_type, file_type;

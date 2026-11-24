@@ -163,6 +163,7 @@ init_daemon_domain(edgetpu_logging)
 
 type edgetpu_tachyon_server, domain;
 init_daemon_domain(edgetpu_tachyon_server)
+typeattribute edgetpu_tachyon_server pcc_vendor_server;
 
 type edgetpu_vendor_server, domain;
 init_daemon_domain(edgetpu_vendor_server)
